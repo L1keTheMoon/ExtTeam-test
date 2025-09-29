@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('/src/assets/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/GraphikLCG-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('/src/assets/fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('/src/assets/fonts/GraphikLCG-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+$orange: #FF6B30;
+$green: #38AB57;
+$light-pink: #F8F3F3;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: 'Graphik LCG', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 0 120px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  line-height: 1;
+  color: white;
+
+  &__container {
+    width: 1440px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    color: white;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.contacts {
+  font-size: 16px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+
+  &__phone {
+    margin-right: auto;
+    padding: 5px 5px 5px 0;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 46px;
+    opacity: 0.6;
+  }
+
+  &__link {
+    padding: 5px;
+  }
+
+  &__search-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.nav-menu {
+  height: 64px;
+  font-size: 20px;
+  border-top: 1px solid #00000014;
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    margin-top: 10px;
+  }
+
+  &__link {
+    padding: 10px;
+  }
+}
+
+.nav-menu__link,
+.contacts__link {
+  &:hover {
+    color: $orange;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
