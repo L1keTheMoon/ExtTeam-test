@@ -21,5 +21,11 @@ techButtons.forEach(button => {
   button.addEventListener('click', event => {
     techButtons.forEach(b => b.classList.remove('technologies__button_active'));
     event.currentTarget.classList.add('technologies__button_active');
-  })
+  });
+});
+
+const form = document.querySelector('form');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  event.target?.reset();
 });

@@ -165,9 +165,6 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
-  <div>
-    <div class="my-pagination"></div>
-  </div>
   <section class="section about" id="about">
     <div class="about__container">
       <div class="about__text">
@@ -181,7 +178,8 @@
           коробок разной формы и размера, Formabox производит картонные и бумажные мешки, втулки, гильзы и шпули.</p>
       </div>
       <div class="about__video-container">
-        <img src="/src/assets/images/video.jpg" alt="video" class="about__video">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-134533652&id=456240392&hash=e663a48c3dac4e71" frameborder="0"
+          allowfullscreen="1" class="about__video"></iframe>
       </div>
     </div>
     <div class="info info_mt120">
@@ -413,9 +411,12 @@
         интереса и вместе выберем удобное время для встречи
       </p>
       <form class="consultation__inputs">
-        <input type="text" class="input" placeholder="Ваше имя" name="name" autocomplete="name">
-        <input type="tel" class="input" placeholder="Телефон" name="phone" autocomplete="tel">
-        <input type="email" class="input" placeholder="Эл. почта" name="email" autocomplete="email">
+        <input type="text" class="input" placeholder="Ваше имя" name="name" autocomplete="name"
+          pattern="^[a-zA-Zа-яА-ЯЁё \-]+$" required autocomplete="name"
+          title="Разрешены символы латиницы, кириллицы, знаки дефиса и пробелы.">
+        <input type="tel" class="input" placeholder="Телефон" name="phone" autocomplete="tel"
+          pattern="^(8|\+7)(\s|\(|-)?(\d{3})(\s|\)|-)?(\d{3})(\s|-)?(\d{2})(\s|-)?(\d{2})$" required>
+        <input type="email" class="input" placeholder="Эл. почта" name="email" autocomplete="email" required>
         <button type="submit" class="button consultation__submit">
           Отправить
           <img src="/src/assets/icons/arrow-right.svg" alt="arrow-right">
