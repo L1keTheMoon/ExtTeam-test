@@ -236,11 +236,11 @@ body {
     }
 
     &-icon {
-      width: 16px;
-      height: 16px;
+      width: 24px;
+      height: 24px;
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 16px;
+      left: 16px;
       color: $light-gray;
     }
 
@@ -1105,33 +1105,22 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .input {
-    font-size: 16px;
-    padding: 12px;
-    font-weight: 400;
-  }
-
+@media (max-width: 800px) {
   .header {
     &__container {
-      height: 60px;
+      height: 80px;
       gap: 0;
       justify-content: flex-start;
     }
 
     &__controls {
-      height: 60px;
+      height: 80px;
       width: 100%;
     }
 
     &__logo {
-      width: 69px;
-      height: 40px;
+      width: 103px;
+      height: 60px;
     }
 
     &__button-burger {
@@ -1181,7 +1170,7 @@ body {
       }
 
       &-input {
-        padding-left: 36px;
+        padding-left: 48px;
       }
     }
 
@@ -1237,7 +1226,6 @@ body {
   }
 
   .nav-menu {
-    font-size: 16px;
     line-height: 1;
     height: auto;
     color: black;
@@ -1253,6 +1241,51 @@ body {
       display: block;
       padding: 16px 0 16px;
       border-bottom: 1px solid $light-pink;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 400;
+  }
+
+  .header {
+    &__container {
+      height: 60px;
+    }
+
+    &__controls {
+      height: 60px;
+    }
+
+    &__logo {
+      width: 69px;
+      height: 40px;
+    }
+
+    &__search {
+      &-input {
+        padding-left: 36px;
+      }
+
+      &-icon {
+        width: 16px;
+        height: 16px;
+        top: 12px;
+        left: 12px;
+      }
+    }
+
+    .nav-menu {
+      font-size: 16px;
     }
   }
 
